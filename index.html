@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestor de tareas</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/27ce10cb04.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+    <h2>*Actualiza y mira como los datos se quedan guardados!</h2>
+    <div id="contenedor" class="contenedor">
+        <input id="entradaActividad" type="text" placeholder="Introducir una actividad">
+        <button id="boton-guardar"><i class="fas fa-share"></i></button>
+        <div class="contenedor-alert">
+            <p class="alert-vacio">* El campo está vacío, vuelve a intentarlo:</p>
+        </div>
+        <div class="extra">
+            <div>
+                <h4>Prioridad:</h4>
+                <div class="prioridad">
+                    <p id="btnAlta" class="prioAlta ">ALTA</p>
+                    <p id="btnMedia" class="prioMedia ">MEDIA</p>
+                    <p id="btnBaja" class="prioBaja">BAJA</p>
+                </div>
+            </div>
+            <div>
+                <h4>Nombre:</h4>
+                <input id="inputNombre" class="input-nombre" type="text" placeholder="Introduce tu nombre:">
+                <button id="guardaNombre"><i class="fas fa-angle-down"></i></button>
+            </div>
+        </div>
+        <div class="caja-tareas tareas-por-hacer">
+            <h3>Tareas por hacer</h3>
+        </div>
+        <div class="caja-tareas tareas-completadas">
+            <h3>Tareas completadas</h3>
+        </div>
+    </div>
+    <!-- ZONA DE SCRIPTS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #4a5a5c;
+    color: white;
+}
+h1{
+    text-align: center;
+    margin-top: 200px;
+}
+h2{
+    font-size: 12px;
+    color: orange;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: normal;
+}
+.contenedor{
+    width: 500px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    position: relative;
+}
+input, button{
+    border: none;
+    padding: 26px 30px;
+    width: 490px;
+    border-radius: 20px;
+    outline: none;
+}
+#boton-guardar:hover{
+    background-color: #88d174;
+    transition: 0.2s;
+    transform: rotate(100deg);
+}
+button{
+    width: 70px;
+    position: absolute;
+    right: -7px;
+    background-color: cadetblue;
+    color: white;
+    transition: 0.2s;
+    border-radius: 100px;
+}
+.contenedor-tarea{
+   border: 1px solid rgb(212, 212, 212); 
+   margin-bottom: 10px;
+}
+.tarea{
+    width: 90%;
+    margin: auto;    
+    font-size: 13px;
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+}
+.tarea p{
+    width: 400px;
+    align-items: center;
+    display: flex;
+}
+.tarea div{
+    margin: 0 10px;
+}
+.boton-borrar{
+    transition: 0.3s;
+
+}
+.boton-borrar:hover{
+    color: red;
+    transition: 0.3s;
+}
+.boton-activo{
+    transition: 0.3s;
+}
+.boton-activo:hover{
+    color: greenyellow;
+    transition: 0.3s;
+}
+.pintar-extras{
+    width: 180px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.pintar-extras p{
+    font-size: 11px;
+    margin-bottom: 10px;
+    color: #c6c6c6;
+}
+.caja-tareas h3{ 
+    text-align: center;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    background-color: #ffffff33;
+    padding: 10px;
+    border-radius: 10px;
+}
+.oculto{
+    display: none;
+}
+.activo{
+    color: pink;
+}
+.hover{
+    color: red;
+}
+.alert-vacio{
+    display: none;
+    font-size: 10px;
+    margin-left: 25px;
+    margin-top: 7px;
+    color: orange;
+}
+.extra{
+    display: flex;
+    justify-content: space-between;
+}
+.extra h4{
+    color: #e8e8e8;
+    font-weight: 100;
+    font-size: 14px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+.prioridad{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 230px;
+    height: 26px;
+}
+.prioAlta{
+    color: red;
+    cursor: pointer;
+}
+.prioAlta:hover{
+    color: rgb(172, 0, 0);
+}
+.prioMedia{
+    color: orange;
+    cursor: pointer;
+}
+.prioMedia:hover{
+    color: rgb(173, 113, 0);
+}
+.prioBaja{
+    color: rgb(168, 252, 0);
+    cursor: pointer;
+}
+.prioBaja:hover{
+    color: rgb(113, 170, 0);
+}
+.prioSeleccionada{
+    background-color: #00000017;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+.input-nombre{
+    background-color: #6e7b7d;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+    width: 240px;
+    padding-left: 20px;
+    color: #c6c6c6;    
+}
+.input-nombre::-webkit-input-placeholder { 
+    color: rgb(224, 224, 224); 
+    font-size: 11px;
+} 
+
+#guardaNombre{
+    background-color: yellowgreen;
+    border-radius: 0;
+    height: 26px;
+    padding: 0;
+    right: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#guardaNombre:hover{
+    background-color: rgb(128, 179, 27);
+}
